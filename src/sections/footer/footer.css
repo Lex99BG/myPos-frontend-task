@@ -1,0 +1,28 @@
+/*FOOTER BEGINING*/
+.footer-list-style{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 20px;
+}
+.footer-list-style li::before {
+    content: '>>';
+    padding-right: 10px;
+    color: #3a89ff;
+}
+.footer-list-style li a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-list-style li a:hover {
+    color: #5799fb;
+}
+.footer-hr {
+    width: 70%;
+    margin: 0 auto;
+}
+.footer-span {
+    color: #3a89ff;
+}
+/*FOOTER ENDING*/
