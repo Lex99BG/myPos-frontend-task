@@ -29,14 +29,18 @@
 }
 .product-item a {
     position: relative;
-    transition: transform 2s ease;
+    transition: transform 0.5s ease;
   
 }
-.product-item a:hover {
-    transform: rotate(-18deg);
-    transition: transform 2s ease;
+
+.product-item a img {
+    transition: transform 0.5s ease;
 }
-.product-item a:hover::before{
+
+.product-item a:hover img {
+    transform: rotate(-18deg);
+}
+.product-item a:before{
     content: '';
     position: absolute;
     background: linear-gradient(0deg, rgba(59,141,255,1) 0%, rgba(38,163,240,1) 45%, rgba(9,193,220,1) 100%);
@@ -49,6 +53,17 @@
     border-radius: 50px;
     z-index: -1;
     transform: rotate(351deg);
+    visibility: hidden;
+    opacity: 0;
+    transform: rotate(45deg);    
+    transition: all 0.2s ease-in-out;
+    transition-delay: 100ms;
+
+}
+.product-item a:hover:before {
+    visibility: visible;
+    opacity: 1;
+    transform: rotate(-30deg);
 }
 .company-logos{
     display: inline-flex;
