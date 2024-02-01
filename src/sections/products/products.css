@@ -19,6 +19,9 @@
     right: -119px;
     color: #fff;
 }
+.price-tag-product h2 {
+    font-weight: bold;
+}
 .product-btn {
     display: block;
     text-align: center;
@@ -37,8 +40,12 @@
     content: '';
     position: absolute;
     background: linear-gradient(0deg, rgba(59,141,255,1) 0%, rgba(38,163,240,1) 45%, rgba(9,193,220,1) 100%);
-    width: 262px;
-    height: 304px;
+    width: 120%;
+    height: 85%;
+    left: -10px; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
     border-radius: 50px;
     z-index: -1;
     transform: rotate(351deg);

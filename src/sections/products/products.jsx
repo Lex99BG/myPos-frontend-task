@@ -2,6 +2,7 @@ import logoImages from '../../components/logo-images/logoimages';
 import terminalImages from '../../components/terminal-images/terminalimages';
 import PriceTagProducts from '../../components/price-tag-products/pricetag-product';
 import './products.css';
+import { CustomToolT } from '../../components/tooltip/tooltip';
 
 function Product() {
 
@@ -12,9 +13,13 @@ function Product() {
     { id: 4, name: 'myPOS Smart' },
     { id: 5, name: 'myPOS Mini' },
   ];
-
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  const tooltData = [
+    { heading: 'Combo', text: 'Android OS, Paper Printer' },
+    { heading: 'Mini Ice', text: 'Android OS, Touch-screen display, Paper Printer' },
+    { heading: 'Smart N5', text: 'Android OS, Touch-screen display, Paper Printer' },
+    { heading: 'Smart', text: 'Android OS, Touch-screen display, Paper Printer' },
+    { heading: 'Mini', text: 'Android OS, Paper Printer' },
+  ];
 
   return (
     <section className="products">
@@ -29,25 +34,19 @@ function Product() {
             <a href="#" className="btn-style product-btn">
               shop now
             </a>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-            Tooltip on top
-          </button>
           </div>
 
-          {productsData.map((product) => (
-            <div key={product.id} className="col-md-4 product-item p-4">
-              <a
-                href="#"
-                data-bs-toggle="tooltip"
-                data-bs-placement="top"
-                data-bs-original-title="Tooltip on top"
-              >
-                <PriceTagProducts />
-                <img
-                  src={terminalImages[product.id - 1]}
-                  alt=""
-                  className="img-fluid"
-                />
+          {productsData.map((product, index) => (
+            <div key={product.id} className="col-md-4 product-item p-4 my-4">
+              <a href="#">
+                <CustomToolT heading={tooltData[index].heading} text={tooltData[index].text}>
+                  <PriceTagProducts />
+                  <img
+                    src={terminalImages[product.id - 1]}
+                    alt="Terminal Images"
+                    className="img-fluid"
+                  />
+                </CustomToolT>
               </a>
               <h3>{product.name}</h3>
             </div>
