@@ -20,7 +20,7 @@ function PaymentInfo() {
                   className="d-flex flex-column justify-content-center align-items-center gap-3"
                 >
                   <div
-                    className="col-md-12 d-flex gap-3 align-items-center"
+                    className="col-md-12 d-flex gap-3 align-items-center align-self-stretch"
                   >
                     <img
                       src={img1}
@@ -33,7 +33,7 @@ function PaymentInfo() {
                     </div>
                   </div>
                   <div
-                    className="col-md-12 d-flex gap-3 align-items-center"
+                    className="col-md-12 d-flex gap-3 align-items-center align-self-stretch"
                   >
                     <img
                       src={img2}
@@ -46,7 +46,7 @@ function PaymentInfo() {
                     </div>
                   </div>
                   <div
-                    className="col-md-12 d-flex gap-3 align-items-center"
+                    className="col-md-12 d-flex gap-3 align-items-center align-self-stretch"
                   >
                     <img
                       src={img3}
@@ -61,12 +61,12 @@ function PaymentInfo() {
                 </div>
               </div>
 
-              <div className="col-md-6">
+              <div className="col-md-6 my-3">
                 <div
                   className="d-flex flex-column justify-content-center align-items-center gap-3"
                 >
                   <div
-                    className="col-md-12 d-flex gap-3 align-items-center"
+                    className="col-md-12 d-flex gap-3 align-items-center align-self-stretch"
                   >
                     <img
                       src={img4}
@@ -79,7 +79,7 @@ function PaymentInfo() {
                     </div>
                   </div>
                   <div
-                    className="col-md-12 d-flex gap-3 align-items-center"
+                    className="col-md-12 d-flex gap-3 align-items-center align-self-stretch"
                   >
                     <img
                       src={img5}
@@ -92,7 +92,7 @@ function PaymentInfo() {
                     </div>
                   </div>
                   <div
-                    className="col-md-12 d-flex gap-3 align-items-center"
+                    className="col-md-12 d-flex gap-3 align-items-center align-self-stretch"
                   >
                     <img
                       src={img6}

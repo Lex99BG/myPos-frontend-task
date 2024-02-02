@@ -5,12 +5,13 @@
     padding: 10px;
     width: 300px;
     border-radius: 10px;
+    z-index: 2;
 }
 .toolt::before {
     content: '';
     position: absolute;
     bottom: -49px;
-    left: 0; 
+    left: -20px; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 

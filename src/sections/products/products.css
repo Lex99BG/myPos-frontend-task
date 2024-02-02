@@ -8,6 +8,11 @@
     flex-direction: column;
 }
 .price-tag-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     text-align: center;
     width: 140px;
     height: 140px;
@@ -15,11 +20,12 @@
     background: linear-gradient(0deg, rgba(59,141,255,1) 0%, rgba(38,163,240,1) 45%, rgba(9,193,220,1) 100%);
     border-radius: 50% 50% 50% 0;
     position: absolute;
-    top: -66px;
-    right: -119px;
+    top: -92px;
+    right: -96px;
     color: #fff;
+    z-index: 2;
 }
-.price-tag-product h2 {
+.price-tag-product h3 {
     font-weight: bold;
 }
 .product-btn {

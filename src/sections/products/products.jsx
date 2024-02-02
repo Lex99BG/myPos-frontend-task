@@ -25,7 +25,7 @@ function Product() {
     <section className="products">
       <div className="container">
         <div className="row justify-content-center align-items-center">
-          <div className="col-md-4">
+          <div className="col-md-4 p-4 my-4">
             <h2>Payment Terminals</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed

@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import introTerminal from '../../assets/terminal-intro.png'
 import './header.css'
-import ProductIntro from '../product-intro/product-intro'
 import PriceTagHeader from '../../components/price-tag-header/pricetag-header'
 
 function Header() {
@@ -34,13 +33,13 @@ function Header() {
         <section className="product-intro">
           <div className="container">
             <div className="row justify-content-center align-items-center">
-              <div className="col-md-6">
+              <div className="col-md-6 col-lg-6">
                 <ul className="list-style">
                   <li>0.00 EUR monthly fee</li>
                   <li>1.75% transaction fee *</li>
                 </ul>
               </div>
-              <div className="col-md-6 terminal-img">
+              <div className="col-md-6 col-lg-6 terminal-img">
                 <img
                   src={introTerminal}
                   alt="Intro Terminal"
