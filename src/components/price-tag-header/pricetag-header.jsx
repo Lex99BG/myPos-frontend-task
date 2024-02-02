@@ -2,11 +2,8 @@ function PriceTagHeader() {
 
   return (
     <div className="price-tag">
-        <h2>
-        99.00 <br />
-        EURO <br />
-        <span>exl. Vat</span>
-        </h2>
+        <h3 style={{margin: '0'}}>99.00 EURO</h3>
+        <p style={{margin: '0'}}>exl. Vat</p>
     </div>
   )
 }

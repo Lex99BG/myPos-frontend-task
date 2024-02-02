@@ -31,15 +31,15 @@ function Header() {
         </header>
 
         <section className="product-intro">
-          <div className="container">
-            <div className="row justify-content-center align-items-center">
-              <div className="col-md-6 col-lg-6">
+          <div className="container ">
+            <div className="row justify-content-center align-items-center product-container">
+              <div className="col-md-6 col-lg-6 col-price">
                 <ul className="list-style">
                   <li>0.00 EUR monthly fee</li>
                   <li>1.75% transaction fee *</li>
                 </ul>
               </div>
-              <div className="col-md-6 col-lg-6 terminal-img">
+              <div className="col-md-6 col-lg-6 terminal-img col-img">
                 <img
                   src={introTerminal}
                   alt="Intro Terminal"
